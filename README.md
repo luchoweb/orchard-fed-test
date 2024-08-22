@@ -1,8 +1,11 @@
-# React + Vite
+# Orchard FED Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Test performed using React + Vite.**
 
-Currently, two official plugins are available:
+I used React because I know that it is a library that the company uses, so I wanted to show you a little about how I work with this library. In addition, Vite comes configured and helps save time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I have deployed the test in Netlify, although to run it locally just install the dependencies ```npm install``` and run the following command ```npm run dev```
+
+**Netlify link**: https://orchard-fed-test.netlify.app
+
+Thanks for your time.
