@@ -1,9 +1,10 @@
-import { BodyNeeds } from "./components";
+import { BodyNeeds, LatestPosts } from "./components";
 
 function App() {
   return (
     <>
       <BodyNeeds />
+      <LatestPosts />
     </>
   );
 }
