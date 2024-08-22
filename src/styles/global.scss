@@ -10,7 +10,7 @@
   --fw-medium: 500;
   --fw-bold: 600;
 
-  --container-max-width: 1200px;
+  --container-max-width: 1190px;
   --container-padding: 10px;
   --transition-all: all 0.3s ease-in-out
 }
@@ -27,6 +27,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: var(--fw-bold);
 }
 
 .container {

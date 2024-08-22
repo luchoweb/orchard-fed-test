@@ -41,13 +41,14 @@
     &__gallery {
       align-items: start;
       display: grid;
-      gap: 20px;
+      gap: 10px;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       order: 2;
       width: 100%;
 
       @media (min-width: $breakpoint-desktop) {
+        gap: 20px;
         order: 1;
         width: 66%;
       }

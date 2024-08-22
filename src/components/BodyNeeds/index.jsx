@@ -1,4 +1,4 @@
-import { images } from "../../assets/components/BodyNeeds";
+import { BodyNeedsImages as images } from "../../assets/images";
 
 import "../../styles/components/BodyNeeds.scss";
 
