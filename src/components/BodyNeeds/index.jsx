@@ -9,7 +9,7 @@ export default function BodyNeeds() {
         <div className="grid-col__gallery">
           {images.map((image, index) => (
             <picture className="gallery__image" key={`image-${index}`}>
-              <img src={image.x1} srcSet={`${images.x2} 2x`} />
+              <img src={image.normal} srcSet={`${image.retina} 2x`} alt="image" />
             </picture>
           ))}
         </div>

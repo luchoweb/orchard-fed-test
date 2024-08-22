@@ -1,17 +1,27 @@
+@import "../includes/vars";
+
 .body-needs {
   &__grid {
-    display: grid;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     margin: 10rem 0 5rem 0;
+
+    @media (min-width: $breakpoint-desktop) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: var(--fw-normal);
     margin: 0.2em 0 0.5em 0;
     text-transform: uppercase;
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 1.7rem;
+    }
   }
 
   &__subhead {
@@ -29,19 +39,51 @@
 
   .grid-col {
     &__gallery {
+      align-items: start;
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      order: 2;
+      width: 100%;
+
+      @media (min-width: $breakpoint-desktop) {
+        order: 1;
+        width: 66%;
+      }
+    }
+
+    &__content {
+      margin-bottom: 2rem;
+      order: 1;
+      width: 100%;
+
+      @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 0;
+        order: 2;
+        width: 34%;
+      }
     }
   }
 
   .gallery {
     &__image {
       line-height: 0;
+      overflow: hidden;
+
+      img {
+        transition: var(--transition-all);
+        width: 100%;
+      }
 
       &:first-child {
         grid-row-start: span 2;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
       }
     }
   }

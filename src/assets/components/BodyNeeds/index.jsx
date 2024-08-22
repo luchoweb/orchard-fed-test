@@ -7,15 +7,15 @@ import thirdImg2x from "./image-03@2x.jpg";
 
 export const images = [
   {
-    x1: firstImg,
-    x2: firstImg2x,
+    normal: firstImg,
+    retina: firstImg2x,
   },
   {
-    x1: secondImg,
-    x2: secondImg2x,
+    normal: secondImg,
+    retina: secondImg2x,
   },
   {
-    x1: thirdImg,
-    x2: thirdImg2x,
+    normal: thirdImg,
+    retina: thirdImg2x,
   },
 ];
