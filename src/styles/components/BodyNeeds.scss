@@ -69,6 +69,7 @@
 
   .gallery {
     &__image {
+      cursor: pointer;
       line-height: 0;
       overflow: hidden;
 
