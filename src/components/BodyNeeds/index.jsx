@@ -2,13 +2,17 @@ import { BodyNeedsImages as images } from "../../assets/images";
 
 import "../../styles/components/BodyNeeds.scss";
 
-export default function BodyNeeds() {
+export default function BodyNeeds({ setModalState }) {
   return (
     <section className="body-needs container">
       <div className="body-needs__grid">
         <div className="grid-col__gallery">
           {images.map((image, index) => (
-            <picture className="gallery__image" key={`image-${index}`}>
+            <picture
+              className="gallery__image"
+              key={`image-${index}`}
+              onClick={() => setModalState({ showModal: true, image})}
+            >
               <img src={image.normal} srcSet={`${image.retina} 2x`} alt="image" />
             </picture>
           ))}

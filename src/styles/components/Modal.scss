@@ -1,0 +1,45 @@
+@import "../includes/vars";
+
+.modal {
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  display: grid;
+  bottom: 0;
+  opacity: 0;
+  position: fixed;
+  place-content: center center;
+  transition: var(--transition-all);
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  &.active {
+    opacity: 1;
+    z-index: 9999;
+  }
+
+  &__close {
+    background: none;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    height: 30px;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    transition: var(--transition-all);
+    width: 30px;
+
+    &:hover {
+      background: white;
+      color: var(--color-dark);
+    }
+  }
+
+  &__image {
+    &.hide {
+      display: none
+    }
+  }
+}

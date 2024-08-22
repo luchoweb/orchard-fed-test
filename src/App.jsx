@@ -1,10 +1,18 @@
+import { useState } from "react";
 import { BodyNeeds, LatestPosts } from "./components";
+import Modal from "./components/Modal";
 
 function App() {
+  const [modalState, setModalState] = useState({
+    showModal: false,
+    image: {}
+  });
+
   return (
     <>
-      <BodyNeeds />
+      <BodyNeeds setModalState={setModalState} />
       <LatestPosts />
+      <Modal state={modalState} setState={setModalState} />
     </>
   );
 }
