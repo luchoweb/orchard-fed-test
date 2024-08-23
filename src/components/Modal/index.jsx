@@ -5,7 +5,7 @@ export default function Modal({ state, setState }) {
 
   const hideModalState = {
     showModal: false,
-    image: {}
+    image
   };
 
   return(
